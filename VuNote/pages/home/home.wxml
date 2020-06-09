@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+	<!-- 滚动视图 -->
+	<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+		<block wx:for="{{imgurls}}" wx:key="*this">
+			<swiper-item>
+				<image src="{{item}}" class="slide-image" width="100%" height="180" mode="aspectFill"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view style="background-color: #f6f6f6;height:20rpx"></view>
+	<!-- 列表 -->
+	<view class="gradview">
+		<block wx:for="{{movielist}}" wx:key="this">
+			<view class="movieitem" bindtap="gotodetail">
+				<image src="{{item.corver}}" model = 'aspectFill' class="item_img"></image>
+				<view class="item_sub">
+					<text class="item_text">{{item.title}}</text>
+				</view>
+			</view>
+		</block>
+	</view>
+
+</view>

@@ -1,0 +1,36 @@
+/* pages/home/home.wxss */
+page{
+  height: 100%;
+  width: 100%;
+}
+.slide-image{
+  width: 100%;
+}
+.gradview {
+  margin:5rpx 10rpx 5rpx 10rpx
+}
+.movieitem {
+  margin:1%;
+  width: 48%;
+  height: 360rpx;
+  float: left;
+  background-color: lightslategrey;
+}
+.item_img{
+  position: absolute;
+  margin-top: 10rpx;
+  width: 46%;
+  height: 260rpx;
+}
+.item_sub{
+  position: absolute;
+  margin-top: 280rpx;
+  width: 100%;
+}
+.item_text{
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+<!--pages/found/found.wxml-->
+<view class="page">
+	<!-- 热点，发表，我的关注 -->
+	<view class="found_top">
+		<button class="btn_hot" bindtap="gotohot">热点</button>
+		<button class="btn_publish" bindtap="gotojoin">立即参与</button>
+		<button class="btn_my" bindtap="gotomypublish">我的发布</button>
+	</view>
+
+	<!-- 投票/广告 -->
+	<view class="ad">
+  <text style="height:100rpx;line-height:100rpx;color:#fff;text-align:center;width:100%">-广告位招租-</text>
+	</view>
+	<block wx:for="{{hotlist}}" wx:key="hotkey">
+		<view class="found_item">
+    <image class="found_avatar" src="{{item.avatar}}"></image>
+    <view class="found_right">
+    <text class="found_name">{{item.name}}</text>
+    <text class="found_content">{{item.content}}</text>
+    </view>
+		</view>
+	</block>
+</view>

@@ -1,0 +1,44 @@
+<!--pages/user/editInfo.wxml-->
+<view style="width:100%;height:100%">
+	<!-- 头像 -->
+	<view class="rowStyle" style="height:120rpx">
+		<text style="margin-left:30rpx;height:120rpx;line-height:120rpx;font-size:30rpx;">头像</text>
+		<image style="" bindtap="changeImage" class="headimg"></image>
+	</view>
+	<view style="background-color:#f6f6f6;height:2rpx;width:100%"></view>
+
+	<!-- 名字 -->
+	<view class="rowStyle">
+		<text style="margin-left:30rpx;height:80rpx;line-height:80rpx;font-size:30rpx">名字</text>
+		<text style="margin-right:30rpx;height:80rpx;line-height:80rpx;font-size:30rpx">{{name}}</text>
+	</view>
+	<view style="background-color:#f6f6f6;height:2rpx;width:100%"></view>
+
+	<!-- 性别 -->
+	<view class="rowStyle" style="height:100rpx">
+		<text style="margin-left:30rpx;height:100rpx;line-height:100rpx;font-size:30rpx">性别</text>
+		<view style="margin-right:20rpx">
+			<text style="font-size:28rpx">女</text>
+			<switch checked="{{sex}}" bindchange="changesex" style="height:60rpx;line-height:60rpx;margin-top:20rpx;margin-right:10rpx;margin-left:10rpx"></switch>
+			<text style="font-size:28rpx">男</text>
+		</view>
+	</view>
+	<view style="background-color:#f6f6f6;height:2rpx;width:100%"></view>
+
+	<!-- 生日 -->
+	<view class="rowStyle" style="height:100rpx">
+		<text style="margin-left:30rpx;height:100rpx;line-height:100rpx;font-size:30rpx">生日</text>
+		<button style="margin-right:20rpx;font-size:30rpx;background-color:#fff;height:70rpx;margin-top:15rpx;line-height:70rpx;text-align:right" bindtap="changeBirthday">{{birth}}</button>
+	</view>
+	<view style="background-color:#f6f6f6;height:2rpx;width:100%"></view>
+
+	<!-- 签名 -->
+	<view class="rowStyle">
+		<text style="margin-left:30rpx;height:80rpx;line-height:80rpx;font-size:30rpx">签名</text>
+		<input placeholder="请输入签名" class="signtxt">{{sign}}</input>
+	</view>
+	<view style="background-color:#f6f6f6;height:2rpx;width:100%"></view>
+
+	<!-- 保存 -->
+	<view style="margin-left:40rpx;margin-right:40rpx;height:80rpx;line-height:80rpx;background-color:#ff0000;font-size:32rpx;color:#fff;text-align:center;margin-top:80rpx;border-radius: 10rpx" bindtap="saveinfo">保存</view>
+</view>

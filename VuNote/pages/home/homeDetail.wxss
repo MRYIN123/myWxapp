@@ -1,0 +1,87 @@
+/* pages/home/homeDetail.wxss */
+page{
+  height: 100%;
+  background-color: #0000;
+  position: relative;
+}
+.detail_top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200rpx;
+}
+.detail_left{
+  width: 200rpx;
+  height: 100%;
+}
+.detail_img {
+  width: 160rpx;
+  height: 160rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  background-color: fuchsia;
+}
+.detail_right{
+  width: 100%;
+  height: 100%;
+  margin-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 主演 */
+.host_item{
+  display:inline-block;
+  width:200rpx;
+  height:200rpx;
+  position: relative;
+}
+.host_avatar {
+  position: absolute;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  width: 160rpx;
+  height: 160rpx;
+  background-color: green;
+}
+.host_text {
+  position: absolute;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 180rpx;
+}
+
+.evalue_item{
+  margin-top: 18rpx;
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+}
+.evalue_avatar {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: green;
+  margin-left: 20rpx;
+}
+.evalue_text {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.evalue_line {
+  height: 2rpx;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+.bottom{
+  position: absolute;
+  width: 100%;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: lightblue;
+}
